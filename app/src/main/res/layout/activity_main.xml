@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data android:id="@+id/data">
+        <variable name="user" type="com.example.naveenkumark.DataBindingTest.User"/>
+    </data>
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.naveenkumark.freshproject.MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.firstName}"
+            android:id="@+id/firstname"
+            tools:text="Naveen Kumar"
+            app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="@+id/activity_main"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:text="@{user.lastName}"
+            android:layout_width="60dp"
+            android:layout_height="19dp"
+            android:id="@+id/lastname"
+            tools:text="K V"
+            app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/firstname"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="58dp"
+            android:layout_height="16dp"
+            tools:layout_editor_absoluteY="183dp"
+            android:id="@+id/textView"
+            app:layout_constraintLeft_toRightOf="@+id/data"
+            android:layout_marginLeft="56dp"
+            android:layout_marginStart="56dp" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
