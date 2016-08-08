@@ -35,15 +35,19 @@
             app:layout_constraintTop_toBottomOf="@+id/firstname"
             android:layout_marginTop="16dp" />
 
-        <TextView
-            android:text="TextView"
-            android:layout_width="58dp"
-            android:layout_height="16dp"
-            tools:layout_editor_absoluteY="183dp"
-            android:id="@+id/textView"
-            app:layout_constraintLeft_toRightOf="@+id/data"
-            android:layout_marginLeft="56dp"
-            android:layout_marginStart="56dp" />
+
+
+        <!--
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="58dp"
+                    android:layout_height="16dp"
+                    tools:layout_editor_absoluteY="183dp"
+                    android:id="@+id/textView"
+                    app:layout_constraintLeft_toRightOf="@+id/data"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginStart="56dp" />
+        -->
 
     </android.support.constraint.ConstraintLayout>
 </layout>
